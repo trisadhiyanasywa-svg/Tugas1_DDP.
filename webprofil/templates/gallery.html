@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<h2>Dokumentasi Kegiatan</h2>
+<div class="row mt-3">
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <img src="{% static 'img/Poto.1.jpeg' %}" class="card-img-top img-fluid rounded" style="height: 250px; object-fit: cover;" alt="Kegiatan Kemuslimahan Senada ">
+            <div class="card-body">
+                <p class="card-text text-center">Kegiatan Kemuslimahan Senada.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <img src="{% static 'img/Poto,2.jpeg' %}" class="card-img-top img-fluid rounded" style="height: 250px; object-fit: cover;"alt="Kegiatan Belajar Mengajar di Kelas">
+            <div class="card-body">
+                <p class="card-text text-center">Kegiatan Belajar Mengajar di Kelas.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4 mb-3">
+        <div class="card shadow-sm">
+            <img src="{% static 'img/Poto.3.jpeg' %}" class="card-img-top img-fluid rounded" style="height: 250px; object-fit: cover;"alt="Kegiatan Belajar secara Daring">
+            <div class="card-body">
+                <p class="card-text text-center">Kegiatan Belajar secara Daring.</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

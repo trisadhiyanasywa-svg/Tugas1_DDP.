@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4">
+            <img src="{% static 'img/Profil.jpeg' %}" 
+                 class="img-fluid rounded-circle shadow-lg" 
+                 style="width: 300px; height: 300px; object-fit: cover; border: 8px solid rgb(13, 20, 34);" 
+                 alt="Foto Profil Saya">
+        </div>
+
+        <div class="col-md-7">
+            <h1 style="color: #050535 !important; font-family: 'Times New Roman', Times, serif !important; font-weight: bold; font-size: 2,5rem;">
+                Halo, Saya Trisa Dhiya Nasywa
+            </h1>
+            <h3 style="color: #28365f !important; font-style: italic; margin-bottom: 20px;">
+                Mahasiswa Teknik Informatika
+            </h3>
+            <p style="color: #0b0e25 !important; font-size: 1.2rem; line-height: 1.8;">
+                Selamat datang di website portofolio saya. Saya adalah seorang mahasiswa di 
+                <strong>STT Terpadu Nurul Fikri</strong> yang memiliki minat besar dalam dunia teknologi 
+                dan pemrograman. Website ini merupakan hasil tugas mata kuliah Dasar-Dasar Pemrograman 
+                yang diintegrasikan dengan framework Django dan Bootstrap.
+            </p>
+            <p style="color: #0d171f !important; font-size: 1.2rem;">
+                Silakan jelajahi menu <strong>About Me</strong> untuk melihat riwayat pendidikan dan organisasi saya 
+                atau <strong>Gallery</strong> untuk melihat dokumentasi kegiatan saya.
+            </p>
+            <div class="mt-4">
+                <a href="{% url 'about' %}" class="btn btn-lg shadow-sm" style="background-color: #070f31; color: rgb(200, 214, 225); border-radius: 30px; padding: 10px 30px;">
+                    Kenali Saya Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
